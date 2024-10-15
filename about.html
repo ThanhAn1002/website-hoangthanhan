@@ -74,6 +74,17 @@
           <h4>MY SLOGAN</h4>
           <h4>" Nếu bạn không tự xây ước mơ của mình thì người khác sẽ thuê bạn xây ước mơ của họ "</h4><br>
           <div class="border-button"><a href="about.html">Tìm Hiểu Thêm</a></div>
+          <script>
+            const button = document.querySelector('.border-button a');
+            button.addEventListener('click', (event) => {
+              event.preventDefault();
+              const scrollToPosition = 800;
+              window.scrollTo({
+                top: scrollToPosition,
+                behavior: 'smooth'
+              });
+            });
+          </script>
         </div>
       </div>
     </div>
@@ -161,8 +172,7 @@
                 <div class="info">
                   <div class="main">Biển Cửa Việt</div>
                   <div class="sub"><a
-                      href="https://www.google.com/maps/place/B%C3%A3i+t%E1%BA%AFm+C%E1%BB%ADa+Vi%E1%BB%87t/@16.9119752,107.1884287,2885m/data=!3m1!1e3!4m6!3m5!1s0x3140e74e579628f7:0x66e42c875733fef8!8m2!3d16.9129825!4d107.1865671!16s%2Fg%2F11c46fjtbr?hl=vi-VN&entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D">Địa
-                      chỉ tại đây</a></div>
+                      href="https://www.google.com/maps/place/B%C3%A3i+t%E1%BA%AFm+C%E1%BB%ADa+Vi%E1%BB%87t/@16.9119752,107.1884287,2885m/data=!3m1!1e3!4m6!3m5!1s0x3140e74e579628f7:0x66e42c875733fef8!8m2!3d16.9129825!4d107.1865671!16s%2Fg%2F11c46fjtbr?hl=vi-VN&entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D">Địa chỉ tại đây</a></div>
                 </div>
               </div>
             </div>
@@ -176,8 +186,7 @@
                 <div class="info">
                   <div class="main">Thành phố Đông Hà</div>
                   <div class="sub"><a
-                      href="https://www.google.com/maps/place/Tp.+%C4%90%C3%B4ng+H%C3%A0,+Qu%E1%BA%A3ng+Tr%E1%BB%8B,+Vi%E1%BB%87t+Nam/@16.8013113,107.0057577,23097m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3140e6bbeee98f3b:0x334cf6d240a5aa1b!8m2!3d16.8088928!4d107.0893798!16zL20vMGNiZmpo?hl=vi-VN&entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D">Địa
-                      chỉ tại đây</a></div>
+                      href="https://www.google.com/maps/place/Tp.+%C4%90%C3%B4ng+H%C3%A0,+Qu%E1%BA%A3ng+Tr%E1%BB%8B,+Vi%E1%BB%87t+Nam/@16.8013113,107.0057577,23097m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3140e6bbeee98f3b:0x334cf6d240a5aa1b!8m2!3d16.8088928!4d107.0893798!16zL20vMGNiZmpo?hl=vi-VN&entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D">Địa chỉ tại đây</a></div>
                 </div>
               </div>
             </div>
@@ -191,8 +200,7 @@
                 <div class="info">
                   <div class="main">Nghĩa trang quốc gia Đ9</div>
                   <div class="sub"><a
-                      href="https://www.google.com/maps/place/Ngh%C4%A9a+trang+Li%E1%BB%87t+s%E1%BB%B9+Qu%E1%BB%91c+gia+%C4%90%C6%B0%E1%BB%9Dng+9/@16.8084373,107.0581442,722m/data=!3m1!1e3!4m6!3m5!1s0x3140ef25afa72cf3:0xae935224f285f88a!8m2!3d16.8084579!4d107.0592922!16s%2Fg%2F11s1t95_ry?hl=vi-VN&entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D">Địa
-                      chỉ tại đây</a></div>
+                      href="https://www.google.com/maps/place/Ngh%C4%A9a+trang+Li%E1%BB%87t+s%E1%BB%B9+Qu%E1%BB%91c+gia+%C4%90%C6%B0%E1%BB%9Dng+9/@16.8084373,107.0581442,722m/data=!3m1!1e3!4m6!3m5!1s0x3140ef25afa72cf3:0xae935224f285f88a!8m2!3d16.8084579!4d107.0592922!16s%2Fg%2F11s1t95_ry?hl=vi-VN&entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D">Địa chỉ tại đây</a></div>
                 </div>
               </div>
             </div>
@@ -206,8 +214,7 @@
                 <div class="info">
                   <div class="main">Bờ sông Hiếu</div>
                   <div class="sub"><a
-                      href="https://www.google.com/maps/place/C%E1%BA%A7u+D%C3%A2y+V%C4%83ng+S%C3%B4ng+Hi%E1%BA%BFu/@16.8290416,107.0850175,1443m/data=!3m1!1e3!4m6!3m5!1s0x3140ef3808847539:0x6bae57980bf3cb6a!8m2!3d16.8301865!4d107.0882423!16s%2Fg%2F11lrg5_pjv?hl=vi-VN&entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D">Địa
-                      chỉ tại đây</a></div>
+                      href="https://www.google.com/maps/place/C%E1%BA%A7u+D%C3%A2y+V%C4%83ng+S%C3%B4ng+Hi%E1%BA%BFu/@16.8290416,107.0850175,1443m/data=!3m1!1e3!4m6!3m5!1s0x3140ef3808847539:0x6bae57980bf3cb6a!8m2!3d16.8301865!4d107.0882423!16s%2Fg%2F11lrg5_pjv?hl=vi-VN&entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D">Địa chỉ tại đây</a></div>
                 </div>
               </div>
             </div>
@@ -221,8 +228,7 @@
                 <div class="info">
                   <div class="main">Cầu Hiền Lương</div>
                   <div class="sub"><a
-                      href="https://www.google.com/maps/place/C%E1%BA%A7u+Hi%E1%BB%81n+L%C6%B0%C6%A1ng+l%E1%BB%8Bch+s%E1%BB%AD/@17.003992,107.0503432,721m/data=!3m1!1e3!4m15!1m8!3m7!1s0x3140c3a05704ac21:0x70db6512dd9749a7!2zQ-G6p3UgSGnhu4FuIEzGsMahbmcsIFF14bqjbmcgVHLhu4ssIFZp4buHdCBOYW0!3b1!8m2!3d17.0049975!4d107.0510406!16s%2Fm%2F03qjrsy!3m5!1s0x3140c3a0486ad7b9:0x3636a0f6d6d69729!8m2!3d17.0043859!4d107.051716!16s%2Fg%2F11c1sj6tyl?hl=vi-VN&entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D">Địa
-                      chỉ tại đây</a></div>
+                      href="https://www.google.com/maps/place/C%E1%BA%A7u+Hi%E1%BB%81n+L%C6%B0%C6%A1ng+l%E1%BB%8Bch+s%E1%BB%AD/@17.003992,107.0503432,721m/data=!3m1!1e3!4m15!1m8!3m7!1s0x3140c3a05704ac21:0x70db6512dd9749a7!2zQ-G6p3UgSGnhu4FuIEzGsMahbmcsIFF14bqjbmcgVHLhu4ssIFZp4buHdCBOYW0!3b1!8m2!3d17.0049975!4d107.0510406!16s%2Fm%2F03qjrsy!3m5!1s0x3140c3a0486ad7b9:0x3636a0f6d6d69729!8m2!3d17.0043859!4d107.051716!16s%2Fg%2F11c1sj6tyl?hl=vi-VN&entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D">Địa chỉ tại đây</a></div>
                 </div>
               </div>
             </div>
@@ -236,8 +242,7 @@
                 <div class="info">
                   <div class="main">Huyện Hướng Hóa</div>
                   <div class="sub"><a
-                      href="https://www.google.com/maps/place/H%C6%B0%E1%BB%9Bng+H%C3%B3a,+Qu%E1%BA%A3ng+Tr%E1%BB%8B,+Vi%E1%BB%87t+Nam/@16.7038728,106.3438489,92436m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3140842cda0c7b23:0x95da6d154c7bafb3!8m2!3d16.6495512!4d106.676292!16s%2Fm%2F03md5sl?hl=vi-VN&entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D">Địa
-                      chỉ tại đây</a></div>
+                      href="https://www.google.com/maps/place/H%C6%B0%E1%BB%9Bng+H%C3%B3a,+Qu%E1%BA%A3ng+Tr%E1%BB%8B,+Vi%E1%BB%87t+Nam/@16.7038728,106.3438489,92436m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3140842cda0c7b23:0x95da6d154c7bafb3!8m2!3d16.6495512!4d106.676292!16s%2Fm%2F03md5sl?hl=vi-VN&entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D">Địa chỉ tại đây</a></div>
                 </div>
               </div>
             </div>
@@ -251,8 +256,7 @@
                 <div class="info">
                   <div class="main">Đức Mẹ La Vang</div>
                   <div class="sub"><a
-                      href="https://www.google.com/maps/place/Th%C3%A1nh+%C4%90%E1%BB%8Ba+%C4%90%E1%BB%A9c+M%E1%BA%B9+La+Vang/@16.710166,107.184433,2889m/data=!3m1!1e3!4m15!1m8!3m7!1s0x3140fb62bd8974f7:0x26ab5fbacc81fda4!2zTGEgVmFuZywgSOG6o2kgUGjDuiwgSOG6o2kgTMSDbmcsIFF14bqjbmcgVHLhu4ssIFZp4buHdCBOYW0!3b1!8m2!3d16.7101666!4d107.1947328!16zL20vMDhteGNj!3m5!1s0x3140fb62be7b3821:0x7588a844a6468683!8m2!3d16.7076332!4d107.1953184!16s%2Fg%2F1tfkst4z?hl=vi-VN&entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D">Địa
-                      chỉ tại đây</a></div>
+                      href="https://www.google.com/maps/place/Th%C3%A1nh+%C4%90%E1%BB%8Ba+%C4%90%E1%BB%A9c+M%E1%BA%B9+La+Vang/@16.710166,107.184433,2889m/data=!3m1!1e3!4m15!1m8!3m7!1s0x3140fb62bd8974f7:0x26ab5fbacc81fda4!2zTGEgVmFuZywgSOG6o2kgUGjDuiwgSOG6o2kgTMSDbmcsIFF14bqjbmcgVHLhu4ssIFZp4buHdCBOYW0!3b1!8m2!3d16.7101666!4d107.1947328!16zL20vMDhteGNj!3m5!1s0x3140fb62be7b3821:0x7588a844a6468683!8m2!3d16.7076332!4d107.1953184!16s%2Fg%2F1tfkst4z?hl=vi-VN&entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D">Địa chỉ tại đây</a></div>
                 </div>
               </div>
             </div>
