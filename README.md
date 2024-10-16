@@ -1,1 +1,1 @@
-https://thanhan1002.github.io/web-hoangthanhan/
+https://thanhan1002.github.io/website-hoangthanhan/
