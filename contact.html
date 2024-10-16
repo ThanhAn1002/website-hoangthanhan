@@ -112,19 +112,7 @@
           <p>Tuyệt vời! Tôi luôn sẵn sàng lắng nghe và tiếp thu ý kiến ​​của mọi người để hoàn thiện bản thân hơn. Để
             nhận được phản hồi của bạn sớm nhất có thể, vui lòng cuộn xuống và điền vào biểu mẫu. Cảm ơn!</p>
 
-          <div class="main-button"><a href="#">Ngay Bây Giờ</a></div>
-
-          <script>
-            const button = document.querySelector('.main-button a');
-            button.addEventListener('click', (event) => {
-              event.preventDefault();
-              const scrollToPosition = 1500;
-              window.scrollTo({
-                top: scrollToPosition,
-                behavior: 'smooth'
-              });
-            });
-          </script>
+          <div class="main-button"><a href="#contact">Ngay Bây Giờ</a></div>
         </div>
       </div>
     </div>
@@ -172,59 +160,75 @@
               allowfullscreen=""></iframe>
           </div>
         </div>
-        <div class="col-lg-12">
+        <div id="contact" class="col-lg-12">
           <form id="contact-form" name="gs" method="submit" role="search" action="#">
-            <div class="row">
-              <div class="col-lg-12">
-                <h4>Gửi <em>Phản Hồi</em> Của Bạn Qua <em>Biểu Mẫu</em> Này</h4>
+              <div class="row">
+                  <div class="col-lg-12">
+                      <h4>Gửi <em>Phản Hồi</em> Của Bạn Qua <em>Biểu Mẫu</em> Này</h4>
+                  </div>
+                  <div class="col-lg-6">
+                      <fieldset>
+                          <label for="Name" class="form-label">Họ và Tên</label>
+                          <input type="text" name="Name" class="Name" placeholder="Ex. Nguyễn Văn A" required>
+                      </fieldset>
+                  </div>
+                  <div class="col-lg-6">
+                      <fieldset>
+                          <label for="Number" class="form-label">Số điện thoại</label>
+                          <input type="text" name="Number" class="Number" placeholder="Ex. +12 345 6789" required>
+                      </fieldset>
+                  </div>
+                  <div class="col-lg-6">
+                      <fieldset>
+                          <label for="rating" class="form-label">Đánh giá</label>
+                          <select name="rating" id="chooseGuests" class="form-select" required>
+                              <option value="">Chọn số sao</option>
+                              <option value="1">1 ⭐</option>
+                              <option value="2">2 ⭐⭐</option>
+                              <option value="3">3 ⭐⭐⭐</option>
+                              <option value="4">4 ⭐⭐⭐⭐</option>
+                              <option value="5">5 ⭐⭐⭐⭐⭐</option>
+                          </select>
+                      </fieldset>
+                  </div>
+                  <div class="col-lg-6">
+                      <fieldset>
+                          <label for="Email" class="form-label">Email</label>
+                          <input type="email" name="Email" class="Email" placeholder="Ex. abc123@gmail.com" required>
+                      </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                      <fieldset>
+                          <label for="message" class="form-label">Ý kiến, đóng góp của bạn</label>
+                          <input type="text" name="message" class="message" placeholder="" autocomplete="on" required>
+                      </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                      <fieldset>
+                          <button type="submit" class="main-button">Gửi Phản Hồi Ngay</button>
+                      </fieldset>
+                  </div>
               </div>
-              <div class="col-lg-6">
-                <fieldset>
-                  <label for="Name" class="form-label">Họ và Tên</label>
-                  <input type="text" name="Name" class="Name" placeholder="Ex. Nguyễn Văn A" autocomplete="on" required>
-                </fieldset>
-              </div>
-              <div class="col-lg-6">
-                <fieldset>
-                  <label for="Number" class="form-label">Số điện thoại</label>
-                  <input type="text" name="Number" class="Number" placeholder="Ex. +12 345 6789" autocomplete="on"
-                    required>
-                </fieldset>
-              </div>
-              <div class="col-lg-6">
-                <fieldset>
-                  <label for="Number" class="form-label">Đánh giá</label>
-                  <select name="guests" id="chooseGuests" class="form-select" aria-label="Số sao" required>
-                    <option value="">Chọn số sao</option>
-                    <option value="1">1 ⭐</option>
-                    <option value="2">2 ⭐⭐</option>
-                    <option value="3">3 ⭐⭐⭐</option>
-                    <option value="4">4 ⭐⭐⭐⭐</option>
-                    <option value="5">5 ⭐⭐⭐⭐⭐</option>
-                  </select>
-                </fieldset>
-              </div>
-              <div class="col-lg-6">
-                <fieldset>
-                  <label for="Name" class="form-label">Email</label>
-                  <input type="text" name="Name" class="Name" placeholder="Ex. abc123@gmail.com" autocomplete="on"
-                    required>
-                </fieldset>
-              </div>
-              <div class="col-lg-12">
-                <fieldset>
-                  <label for="chooseDestination" class="form-label">Ý kiến, đóng góp của bạn</label>
-                  <input type="text" name="Name" class="Name" placeholder="" autocomplete="on" required>
-                </fieldset>
-              </div>
-              <div class="col-lg-12">
-                <fieldset>
-                  <button class="main-button" onclick="submitForm()">Gửi Phản Hồi Ngay</button>
-                </fieldset>
-              </div>
-            </div>
           </form>
-        </div>
+      </div>
+      <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+      <script>
+          (function(){
+              emailjs.init("uh6qXDbcCDxSwk4gX");
+          })();
+      
+          document.getElementById('contact-form').addEventListener('submit', function(event) {
+              event.preventDefault();
+      
+              emailjs.sendForm('service_8lbisbl', 'template_affglx9', this)
+                  .then(function() {
+                      alert('Gửi phản hồi thành công!');
+                      document.getElementById('contact-form').reset();
+                  }, function(error) {
+                      alert('Có lỗi xảy ra: ' + JSON.stringify(error));
+                  });
+          });
+      </script>
       </div>
     </div>
   </div>
