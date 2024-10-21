@@ -1,3 +1,3 @@
 https://thanhan1002.github.io/website-hoangthanhan/
 
-hoangthanhan.id.vn
+https://hoangthanhan.id.vn/
